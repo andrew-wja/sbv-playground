@@ -49,6 +49,6 @@ example2 = do as :: SList Integer <- exists "as"
 
 
 main = do
-  result <- runSMT example1
+  result <- runSMTWith z3 example2
   putStrLn $ show result
 
